@@ -1,0 +1,28 @@
+/* Colors */
+$dark-blue-1: #343a40;
+
+/* Components */
+@import './navbar/__navbar';
+@import './content/__content';
+@import './footer/__footer';
+@import './animations/__animations';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0rem;
+  padding: 0rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  background-color: #e2e2e2;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}

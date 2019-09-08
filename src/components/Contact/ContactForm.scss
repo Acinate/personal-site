@@ -1,0 +1,60 @@
+div.contactForm_container {
+  div.contactForm_inner {
+    form {
+      margin: 0 auto;
+      max-width: 600px;
+      div.input-group {
+        margin-bottom: 1rem;
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          text-transform: uppercase;
+          @media (max-width: 767px) {
+            font-size: 12px;
+          }
+        }
+        input {
+          width: 100%;
+          font-size: 20px;
+          padding: 0.5rem 0.25rem;
+          border: 1px solid #333;
+          @media (max-width: 767px) {
+            font-size: 16px;
+          }
+        }
+        textarea {
+          width: 100%;
+          resize: none;
+          border: 1px solid #333;
+          font-size: 20px;
+          padding: 0.5rem 0.25rem;
+          @media (max-width: 767px) {
+            font-size: 16px;
+          }
+        }
+      }
+      div.controls {
+        text-align: right;
+        button {
+          cursor: pointer;
+          background-color: #17324b;
+          border: 1px solid #17324b;
+          padding: 1rem 2rem;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #fff;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+          @media (max-width: 767px) {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            font-size: 12px;
+          }
+        }
+        button:hover {
+          background-color: #305b83;
+        }
+      }
+    }
+  }
+}
