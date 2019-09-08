@@ -1,0 +1,6 @@
+/dist
+node_modules
+package-lock.json
+.dockerignore
+dockerfile
+.DS_Store
