@@ -2,18 +2,29 @@ import React from 'react';
 import './ContactForm.scss';
 import useContactForm from './ContactFormHook';
 
-const alertUser = (message: any) => {
+interface IMessage {
+  subject: string;
+  email: string;
+  name: string;
+  comments: string;
+}
+
+const message = (m: IMessage) => {
   alert(`Message Sent!
-  Subject: ${message.subject}
-  Sender: ${message.email}
-  Name: ${message.name}
-  Comments: ${message.comments}`);
+  Subject: ${m.subject}
+  Sender: ${m.email}
+  Name: ${m.name}
+  Comments: ${m.comments}`);
 };
 
 export default function ContactForm() {
-  const { message, handleInputChange, handleSubmit } = useContactForm(
-    alertUser
-  );
+  const { inputs, handleInputChange, handleSubmit } = useContactForm(message, {
+    subject: '',
+    email: '',
+    name: '',
+    comments: ''
+  });
+
   return (
     <div className="contactForm_container">
       <div className="contactForm_inner">
@@ -25,7 +36,7 @@ export default function ContactForm() {
               name="subject"
               type="text"
               onChange={handleInputChange}
-              value={message.subject}
+              value={inputs.subject}
               required
             />
           </div>
@@ -36,7 +47,7 @@ export default function ContactForm() {
               name="email"
               type="text"
               onChange={handleInputChange}
-              value={message.email}
+              value={inputs.email}
               required
             />
           </div>
@@ -47,7 +58,7 @@ export default function ContactForm() {
               name="name"
               type="text"
               onChange={handleInputChange}
-              value={message.name}
+              value={inputs.name}
               required
             />
           </div>
@@ -58,7 +69,7 @@ export default function ContactForm() {
               id="comments"
               rows={10}
               onChange={handleInputChange}
-              value={message.comments}
+              value={inputs.comments}
               required
             />
           </div>

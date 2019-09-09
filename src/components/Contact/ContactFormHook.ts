@@ -1,39 +1,27 @@
-import { useState } from 'react';
+import { useState, FormEvent, ChangeEvent } from 'react';
 
-interface IMessage {
-  subject: string;
-  email: string;
-  name: string;
-  comments: string;
-}
+const useContactForm = <T>(callback: (state: T) => void, initialState: T) => {
+  const [inputs, setInputs] = useState<T>(initialState);
 
-const messageState: IMessage = {
-  subject: '',
-  email: '',
-  name: '',
-  comments: ''
-};
-
-const useContactForm = (callback) => {
-  const [message, setMessage] = useState(messageState);
-
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     if (event) {
       event.preventDefault();
     }
-    callback(message);
+    callback(inputs);
   };
-  const handleInputChange = (event) => {
+  const handleInputChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     event.persist();
-    setMessage((msg) => ({
-      ...msg,
+    setInputs({
+      ...inputs,
       [event.target.name]: event.target.value
-    }));
+    });
   };
   return {
     handleSubmit,
     handleInputChange,
-    message
+    inputs
   };
 };
 
