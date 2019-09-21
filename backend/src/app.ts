@@ -1,6 +1,7 @@
 import express from "express";
 import compression from "compression";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 import { API_KEY } from "./util/secrets";
 
@@ -15,6 +16,11 @@ app.set("port", process.env.PORT || 3000);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+  cors({
+    origin: "http://localhost:8080"
+  })
+);
 
 /**
  * Server routes.
