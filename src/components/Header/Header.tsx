@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const profPic = require('./../../assets/img/Jason.jpg');
+const profPic = require('assets/img/Jason.jpg');
 
 const ghLink = 'https://github.com/acinate';
 const soLink = 'https://stackoverflow.com/users/4672238/jeninja';
