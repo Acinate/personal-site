@@ -12,3 +12,6 @@
 
 # Logs
 debug.log
+
+# Misc
+package-lock.json
