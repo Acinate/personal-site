@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import MOTD from 'components/MOTD/MOTD';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -27,7 +28,7 @@ export default class Header extends React.Component {
             <h1>Jason Efthimiou</h1>
           </div>
           <div className="title">
-            <h2>Fullstack Software Developer</h2>
+            <h2>Software Engineer</h2>
           </div>
           <div className="bio">
             <p>I design and build web applications.</p>
@@ -51,6 +52,7 @@ export default class Header extends React.Component {
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
+          <MOTD />
           <div className="contact">
             <a href="https://google.com/">
               <button type="button">Send a Message</button>
