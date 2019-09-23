@@ -1,7 +1,7 @@
 import express from "express";
 import compression from "compression";
 import bodyParser from "body-parser";
-import cors from "cors";
+import cors, { CorsOptions } from "cors";
 
 import { API_KEY } from "./util/secrets";
 
@@ -11,16 +11,28 @@ import * as homeController from "./controllers/home";
 // Create Express server
 const app = express();
 
+// Domain Whitelist
+const whitelist = [
+  "http://localhost:8080",
+  "http://jefthimi.net/",
+  "http://www.jefthimi.net/"
+];
+const corsOptions: CorsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(null, false);
+    }
+  }
+};
+
 // Express configuration
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: "http://localhost:8080"
-  })
-);
+app.use(cors(corsOptions));
 
 /**
  * Server routes.
