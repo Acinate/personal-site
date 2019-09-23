@@ -3,7 +3,7 @@ import compression from "compression";
 import bodyParser from "body-parser";
 import cors, { CorsOptions } from "cors";
 
-import { API_KEY } from "./util/secrets";
+import { PORT, API_KEY } from "./util/secrets";
 
 // Controllers (route handlers)
 import * as homeController from "./controllers/home";
@@ -13,9 +13,9 @@ const app = express();
 
 // Domain Whitelist
 const whitelist = [
-  "http://localhost:8080",
   "http://jefthimi.net/",
-  "http://www.jefthimi.net/"
+  "http://www.jefthimi.net/",
+  "http://localhost:8080"
 ];
 const corsOptions: CorsOptions = {
   origin: (origin, callback) => {
@@ -28,7 +28,7 @@ const corsOptions: CorsOptions = {
 };
 
 // Express configuration
-app.set("port", process.env.PORT);
+app.set("port", PORT);
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
