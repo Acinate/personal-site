@@ -11,8 +11,11 @@ const textCenter: any = {
 const MOTD = () => {
   const [data, setData] = useState({ message: 'message not found' });
 
-  useEffect(() => {
-    axios('http://localhost:3000')
+  const baseUrl = window.location.host;
+  const apiUrl = 'http://' + baseUrl + '/api/';
+
+  const getMessage = async () => {
+    await axios(apiUrl)
       .then((result) => {
         if (result.data && result.data.message) {
           setData({ message: result.data.message });
@@ -21,7 +24,11 @@ const MOTD = () => {
       .catch((err) => {
         console.log(err);
       });
-  });
+  };
+
+  useEffect(() => {
+    getMessage();
+  }, []);
 
   return (
     <div className="MOTD">
