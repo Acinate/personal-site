@@ -5,6 +5,8 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from './components/App';
 
+require('../favicon.ico');
+
 const render = () => {
   ReactDOM.render(
     <AppContainer>
