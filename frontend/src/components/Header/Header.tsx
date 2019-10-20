@@ -31,7 +31,7 @@ export default class Header extends React.Component {
             <h2>Software Engineer</h2>
           </div>
           <div className="bio">
-            <p>I design and build web applications.</p>
+            <p>I design and build software systems.</p>
             <p>I strive to create well organized user interfaces,</p>
             <p>high quality reusable code that scales and systems</p>
             <p>that are high performant with zero downtime.</p>
