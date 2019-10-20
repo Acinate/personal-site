@@ -5,7 +5,7 @@ import './Contact.scss';
 export default class Contact extends React.Component {
   render() {
     return (
-      <div className="contact_container">
+      <div id="contactForm" className="contact_container">
         <h2 className="section-title">Contact</h2>
         <div className="contact_inner">
           <div className="contact_disclaimer">

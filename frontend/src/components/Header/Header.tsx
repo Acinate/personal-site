@@ -16,6 +16,13 @@ const ghLink = 'https://github.com/acinate';
 const soLink = 'https://stackoverflow.com/users/4672238/jeninja';
 const liLink = 'https://www.linkedin.com/in/jason-efthimiou-908311ba/';
 
+const scrollToContactForm = () => {
+  const form: HTMLElement | null = document.getElementById('contactForm');
+  if (form) {
+    form.scrollIntoView();
+  }
+};
+
 export default class Header extends React.Component {
   render() {
     return (
@@ -54,7 +61,7 @@ export default class Header extends React.Component {
           </div>
           <MOTD />
           <div className="contact">
-            <a href="https://google.com/">
+            <a onClick={scrollToContactForm}>
               <button type="button">Send a Message</button>
             </a>
           </div>
