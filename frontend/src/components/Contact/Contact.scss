@@ -3,6 +3,9 @@ div.contact_container {
   h2.section-title {
     margin: 2rem 0rem;
     text-align: center;
+    @media (max-width: 767px) {
+      margin: 1rem;
+    }
   }
   div.contact_inner {
     margin: 0 auto;
@@ -12,7 +15,7 @@ div.contact_container {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 2rem;
     @media (max-width: 767px) {
-      max-width: 325px;
+      padding: 1rem;
     }
     div.contact_disclaimer {
       margin-bottom: 2rem;

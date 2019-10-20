@@ -1,9 +1,8 @@
 div.skills_container {
   position: relative;
-  background-color: #17324b;
-  height: 4rem;
+  padding: 1rem 0rem;
   div.skills_inner {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0rem;
     left: 0rem;
@@ -17,7 +16,6 @@ div.skills_container {
       gap: 1rem;
       @media (max-width: 767px) {
         grid-template-columns: 1fr;
-        max-width: 325px;
       }
       div.skill-cell {
         background-color: #fff;
