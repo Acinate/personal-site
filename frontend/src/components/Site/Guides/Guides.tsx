@@ -1,7 +1,7 @@
 import React from 'react';
 import './Guides.scss';
 
-const webpack = require('../../assets/img/webpack.jpg');
+const webpack = require('../../../assets/img/webpack.jpg');
 
 export default class Guides extends React.Component {
   render() {
