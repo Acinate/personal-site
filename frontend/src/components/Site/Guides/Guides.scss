@@ -1,7 +1,10 @@
+@import './../../../assets/scss/core/_variables';
+
 div.guides_container {
   position: relative;
   padding: 0rem 1rem;
   padding-bottom: 1rem;
+  background-color: $light-grey-1;
   div.guides_inner {
     margin: 0 auto;
     max-width: 1024px;

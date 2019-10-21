@@ -1,5 +1,5 @@
-/* Colors */
-$dark-blue-1: #343a40;
+/* Variables */
+@import './_variables';
 
 /* Components */
 @import './navbar/__navbar';
@@ -18,7 +18,7 @@ body {
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
-  background-color: #e2e2e2;
+  background-color: #fff;
   scroll-behavior: smooth;
 }
 

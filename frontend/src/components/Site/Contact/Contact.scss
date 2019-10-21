@@ -1,5 +1,8 @@
+@import './../../../assets/scss/core/_variables';
+
 div.contact_container {
   padding: 1rem;
+  background-color: $light-grey-1;
   h2.section-title {
     margin: 2rem 0rem;
     text-align: center;

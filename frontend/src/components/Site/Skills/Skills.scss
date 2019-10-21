@@ -1,6 +1,9 @@
+@import './../../../assets/scss/core/_variables';
+
 div.skills_container {
   position: relative;
   padding: 1rem 0rem;
+  background-color: $light-grey-1;
   div.skills_inner {
     position: relative;
     width: 100%;
