@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Guides.scss';
 
 const webpack = require('../../../assets/img/webpack.jpg');
@@ -28,9 +29,9 @@ export default class Guides extends React.Component {
               </p>
             </div>
             <div className="controls">
-              <a href="https://google.com/" target="_">
+              <Link to="/blog">
                 <button type="button">Read More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
