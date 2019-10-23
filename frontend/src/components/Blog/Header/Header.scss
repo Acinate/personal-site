@@ -1,0 +1,57 @@
+@import './../../../assets/scss/core/__variables';
+
+div.blog_header_container {
+  background-color: $light-grey-2;
+}
+
+div.blog_header {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 5rem 0rem;
+}
+
+div.blog_header_title {
+  max-width: 650px;
+  h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 48px;
+    color: $dark-blue-1;
+  }
+}
+
+div.blog_header_author {
+  display: flex;
+  div.author_image {
+    height: 50px;
+    width: 50px;
+    img {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  div.author_name {
+    margin-left: 1rem;
+    p {
+      font-weight: 800;
+      color: $dark-blue-1;
+    }
+  }
+}
+
+div.blog_header_description {
+  margin: 3rem 0rem;
+  max-width: 650px;
+  p {
+    color: $dark-blue-1;
+    font-weight: 500;
+  }
+}
+
+div.blog_header_date {
+  p {
+    color: $dark-blue-1;
+    font-style: italic;
+  }
+}
