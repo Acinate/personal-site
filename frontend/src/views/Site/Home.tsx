@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from 'components/site/Logo/Logo';
+import Logo from 'components/Site/Logo/Logo';
 
 export interface IHome {}
 

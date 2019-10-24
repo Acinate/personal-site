@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import MOTD from 'components/site/MOTD/MOTD';
+import MOTD from 'components/Site/MOTD/MOTD';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

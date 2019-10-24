@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Header from 'components/site/Header/Header';
-import Skills from 'components/site/Skills/Skills';
-import Guides from 'components/site/Guides/Guides';
-import Projects from 'components/site/Projects/Projects';
-import Contact from 'components/site/Contact/Contact';
+import Header from 'components/Site/Header/Header';
+import Skills from 'components/Site/Skills/Skills';
+import Guides from 'components/Site/Guides/Guides';
+import Projects from 'components/Site/Projects/Projects';
+import Contact from 'components/Site/Contact/Contact';
 
 export interface ISiteLayout {}
 
