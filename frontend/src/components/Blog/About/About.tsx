@@ -16,8 +16,8 @@ export default function About() {
         <div className="blog_about_contents">
           <div className="blog_about_description">
             <p className="bio">
-              A Computer Science student interested in modern web development
-              and machine learning.
+              A Software Engineer currently getting his Computer Science degree
+              and building cool stuff.
             </p>
             <p className="location">
               <FontAwesomeIcon icon={faMapMarkerAlt} /> New York, NY
