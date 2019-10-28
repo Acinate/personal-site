@@ -34,13 +34,17 @@ export default function() {
             <p>
               While Concurrent Mode is an opt-in feature, enabling it will be
               simple: just wrap part of your app with a{' '}
-              <span className="inline-code">
-                &lt;ConcurrentMode&gt; element:
-              </span>
+              <span className="inline-code">&lt;ConcurrentMode&gt;</span>{' '}
+              element:
             </p>
           </div>
           <div className="blog_doc_side">
-            <p>Test</p>
+            <p>
+              ConcurrentMode is already available to try out under{' '}
+              <span className="inline-code">
+                {'<React.unstable_ConcurrentMode>'}
+              </span>
+            </p>
           </div>
         </div>
         <div className="blog_doc_wrapper">
