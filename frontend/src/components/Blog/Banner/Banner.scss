@@ -1,0 +1,50 @@
+@import './../../../assets/scss/core/_variables';
+
+div.blog_banner_container {
+  background-color: $dark-blue-1;
+  padding: 4rem 1rem;
+}
+
+div.blog_banner_inner {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+div.blog_banner_offer_wrapper {
+  display: flex;
+}
+
+div.blog_banner_offer_description {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  h2 {
+    font-size: 48px;
+  }
+  p {
+    letter-spacing: 0.5px;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      font-size: 20px;
+      margin-bottom: 0.5rem;
+    }
+  }
+  button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    padding: 1.8rem 8rem 2.2rem 3rem;
+    color: #fff;
+    background: linear-gradient(#dd89a3, #dd3c6f);
+    box-shadow: 0 4px 16px -4px rgba(218, 59, 130, 0.5);
+    border: 1px solid #dd3c6f;
+    height: 7rem;
+    border-radius: 4rem;
+  }
+}
