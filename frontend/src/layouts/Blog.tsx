@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 
+import Navbar from 'components/Navbar/Navbar';
 import Header from 'components/Blog/Header/Header';
 import Content from 'components/Blog/Content/Content';
-import Navbar from 'components/Navbar/Navbar';
+import About from 'components/Blog/About/About';
+
+/* This Layout Design was inspired from: https://frontarm.com/daishi-kato/use-ref-in-concurrent-mode/ */
 
 export interface IBlogLayout {}
 
@@ -22,6 +25,9 @@ export default function BlogLayout() {
       </div>
       <div className="blog-content">
         <Content />
+      </div>
+      <div className="blog-about">
+        <About />
       </div>
     </div>
   );
