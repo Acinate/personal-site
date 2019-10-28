@@ -8,7 +8,10 @@ export default function Header() {
     <div className="blog_header_container">
       <div className="blog_header">
         <div className="blog_header_title">
-          <h1>4 ways to pass children to React elements</h1>
+          <h1>
+            useRef() and Concurrent Mode: how to avoid shooting yourself in the
+            foot
+          </h1>
         </div>
         <div className="blog_header_author">
           <div className="author_image">
