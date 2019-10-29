@@ -3,11 +3,21 @@ import React from 'react';
 import './Banner.scss';
 
 const aiSvg = require('assets/img/ai.svg');
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Banner() {
   return (
     <div className="blog_banner_container">
       <div className="blog_banner_inner">
+        <div className="blog_banner_background">
+          <div className="blog_banner_background_mask">
+            Go
+            <br />
+            Pro
+          </div>
+        </div>
         <div className="blog_banner_offer_wrapper">
           <div className="blog_banner_offer_description">
             <h2>
@@ -19,14 +29,28 @@ export default function Banner() {
               and we'll keep you up to date with our monthly newsletter.
             </p>
             <ul>
-              <li>Access member-exclusive cheatsheets.</li>
-              <li>Save your progress through courses.</li>
-              <li>Recieve our monthly newsletter.</li>
+              <li>
+                <FontAwesomeIcon icon={faCheckSquare} />
+                Access member-exclusive cheatsheets.
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckSquare} />
+                Save your progress through courses.
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckSquare} />
+                Recieve our monthly newsletter.
+              </li>
               <li>
                 <i>All for free</i>
               </li>
             </ul>
-            <button>Create your free account</button>
+            <button>
+              Create your free account
+              <div className="arrow">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
+            </button>
           </div>
           <div className="blog_banner_offer_image">
             <img src={aiSvg} alt="" />
