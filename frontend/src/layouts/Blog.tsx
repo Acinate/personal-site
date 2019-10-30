@@ -5,6 +5,7 @@ import Header from 'components/Blog/Header/Header';
 import Content from 'components/Blog/Content/Content';
 import About from 'components/Blog/About/About';
 import Banner from 'components/Blog/Banner/Banner';
+import Footer from 'components/Blog/Footer/Footer';
 
 /* This Layout Design was inspired from: https://frontarm.com/daishi-kato/use-ref-in-concurrent-mode/ */
 
@@ -32,6 +33,9 @@ export default function BlogLayout() {
       </div>
       <div className="blog-banner">
         <Banner />
+      </div>
+      <div className="blog-footer">
+        <Footer />
       </div>
     </div>
   );

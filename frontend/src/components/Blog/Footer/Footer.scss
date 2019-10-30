@@ -1,0 +1,51 @@
+@import './../../../assets/scss/core/_variables';
+
+div.blog_footer_container {
+  background-color: $light-grey-2;
+  font-family: 'Lato', sans-serif;
+}
+
+div.blog_footer_inner {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 2rem;
+}
+
+div.blog_footer_navbar {
+  display: flex;
+  align-items: center;
+  div.logo {
+    padding-right: 4rem;
+    h2 {
+      font-weight: 500;
+      color: $dark-blue-1;
+      span {
+        font-weight: 200;
+        color: #000;
+      }
+    }
+  }
+  div.links {
+    display: flex;
+    div.link {
+      a {
+        text-decoration: none;
+        color: $dark-blue-1;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    div.link:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+
+div.copyright {
+  p {
+    text-align: right;
+    font-size: 12px;
+    color: $light-blue-2;
+  }
+}
