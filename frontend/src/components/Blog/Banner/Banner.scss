@@ -2,13 +2,14 @@
 
 div.blog_banner_container {
   background-color: $dark-blue-1;
+  background: linear-gradient($dark-blue-1, $dark-blue-2);
   position: relative;
 }
 
 div.blog_banner_inner {
   margin: 0 auto;
-  padding: 10rem 1rem;
-  max-width: 1400px;
+  padding: 7rem 0rem;
+  max-width: 1300px;
 }
 
 div.blog_banner_background {
@@ -25,12 +26,13 @@ div.blog_banner_background_mask {
   top: 50%;
   letter-spacing: 5.8px;
   transform: translate3d(-10%, -50%, 0);
-  left: calc(50vw - 1350px / 2);
+  left: calc(50vw - 1250px / 2);
   font-size: 400px;
   font-family: 'Lato', sans-serif;
-  line-height: 24rem;
+  line-height: 21rem;
   font-weight: 900;
   text-transform: uppercase;
+  color: $dark-blue-3;
   opacity: 0.08;
   pointer-events: none;
 }
@@ -44,21 +46,29 @@ div.blog_banner_offer_wrapper {
 }
 
 div.blog_banner_offer_description {
+  max-width: 575px;
   font-family: 'Lato', sans-serif;
   color: #fff;
   h2 {
     margin-top: 0;
+    margin-bottom: 2rem;
     font-size: 48px;
+    span {
+      color: #dd3c6f;
+    }
   }
   p {
+    margin: 0;
+    margin-bottom: 3rem;
     letter-spacing: 0.5px;
+    line-height: 1.5rem;
   }
   ul {
     padding: 0;
     list-style: none;
     li {
       font-size: 20px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       svg {
         margin-right: 1rem;
       }

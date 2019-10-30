@@ -41,9 +41,6 @@ export default function Banner() {
                 <FontAwesomeIcon icon={faCheckSquare} />
                 Recieve our monthly newsletter.
               </li>
-              <li>
-                <i>All for free</i>
-              </li>
             </ul>
             <button>
               Create your free account
