@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Header.scss';
-const profPic = require('assets/img/Jason.jpg');
+import profPic from 'assets/img/Jason.jpg';
 
 export default function Header() {
   return (

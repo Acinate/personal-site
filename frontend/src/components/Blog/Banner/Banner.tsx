@@ -2,10 +2,11 @@ import React from 'react';
 
 import './Banner.scss';
 
-const aiSvg = require('assets/img/ai.svg');
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+import aiSvg from '../../../assets/img/ai.svg';
 
 export default function Banner() {
   return (

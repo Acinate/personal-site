@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 import './About.scss';
-const profPic = require('assets/img/Jason.jpg');
+import profPic from '../../../assets/img/Jason.jpg';
 
 export default function About() {
   return (

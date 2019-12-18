@@ -1,9 +1,9 @@
 import React from 'react';
 import './Skills.scss';
 
-const frontEnd = require('assets/img/Frontend.png');
-const backEnd = require('assets/img/Backend.png');
-const devOps = require('assets/img/Devops.png');
+import frontEnd from '../../../assets/img/Frontend.png';
+import backEnd from '../../../assets/img/Backend.png';
+import devOps from '../../../assets/img/Devops.png';
 
 export default class Skills extends React.Component {
   render() {

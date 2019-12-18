@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Guides.scss';
 
-const webpack = require('../../../assets/img/webpack.jpg');
+import webpack from '../../../assets/img/webpack.jpg';
 
 export default class Guides extends React.Component {
   render() {
