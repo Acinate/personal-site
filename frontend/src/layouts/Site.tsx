@@ -1,20 +1,21 @@
 import React from 'react';
 
-import Header from 'components/Site/Header/Header';
-import Skills from 'components/Site/Skills/Skills';
-import Guides from 'components/Site/Guides/Guides';
-import Projects from 'components/Site/Projects/Projects';
-import Contact from 'components/Site/Contact/Contact';
+import Header from 'components/profile/header';
+import Skills from 'components/profile/skills';
+import Guides from 'components/profile/guides';
+import Projects from 'components/profile/projects';
+import Contact from 'components/profile/contact';
 
-export interface ISiteLayout {}
+export interface ISiteLayout {
+}
 
 export default class Site extends React.Component {
-  render() {
-    return (
-      <div className="site">
-        <div className="site-header">
-          <Header />
-        </div>
+    render() {
+        return (
+            <div className="site">
+                <div className="site-header">
+                    <Header/>
+                </div>
         <div className="site-skills">
           <Skills />
         </div>
