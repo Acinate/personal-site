@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
 const message = 'test';
@@ -8,17 +8,17 @@ const textCenter: any = {
   color: '#fff'
 };
 
-const MOTD = () => {
-  const [data, setData] = useState({ message: 'message not found' });
+const Motd = () => {
+  const [data, setData] = useState({message: 'message not found'});
 
   const baseUrl = window.location.host;
   const apiUrl = 'http://' + baseUrl + '/api/';
 
   const getMessage = async () => {
     await axios(apiUrl)
-      .then((result) => {
-        if (result.data && result.data.message) {
-          setData({ message: result.data.message });
+        .then((result) => {
+          if (result.data && result.data.message) {
+            setData({message: result.data.message});
         }
       })
       .catch((err) => {
@@ -37,4 +37,4 @@ const MOTD = () => {
   );
 };
 
-export default MOTD;
+export default Motd;

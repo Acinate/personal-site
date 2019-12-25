@@ -1,4 +1,4 @@
-import { useState, FormEvent, ChangeEvent } from 'react';
+import {ChangeEvent, FormEvent, useState} from 'react';
 
 const useContactForm = <T>(callback: (state: T) => void, initialState: T) => {
   const [inputs, setInputs] = useState<T>(initialState);

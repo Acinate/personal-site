@@ -1,5 +1,4 @@
 import React from 'react';
-import './ContactForm.scss';
 import useContactForm from './ContactFormHook';
 
 interface IMessage {
