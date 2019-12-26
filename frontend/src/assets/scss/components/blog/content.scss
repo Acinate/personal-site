@@ -73,12 +73,18 @@ div.blog_post {
     border-radius: 10px;
     background: $light-grey-2;
     overflow-x: auto;
+
+    code {
+      padding: 0;
+      border-radius: 0;
+    }
   }
 
   code {
     background-color: $light-grey-2;
     font-family: 'Inconsolata', monospace;
-    padding: 2.5px;
+    padding: 1px 6px;
+    border-radius: 10px;
   }
 }
 
@@ -105,7 +111,6 @@ div.blog_doc_side {
 .hljs {
   display: block;
   background: $light-grey-2;
-  padding: 0.5em;
   color: #333333;
   overflow-x: auto;
 }

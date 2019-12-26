@@ -1,8 +1,7 @@
 To install any version of Java on Ubuntu, we need to use **update-alternatives** which allows us to easily switch between different versions of java that we install on our machine.
 
-You can find a list of all the available JDKs below. The file I will be downloading is `jdk-13.0.1_linux-x64_bin.tar.gz`
-
 ## Download JDK
+You can find a list of all the available JDKs below. The file I will be downloading is `jdk-13.0.1_linux-x64_bin.tar.gz`
 
 ### JDK 8
 [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)

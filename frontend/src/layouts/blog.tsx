@@ -1,18 +1,27 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Navbar from 'components/navbar/navbar';
-import UbuntuHeader from 'components/blog/posts/ubuntu_java_header';
-import UbuntuContent from 'components/blog/posts/ubuntu_java_content';
+import Header from 'components/blog/header';
+import Content from 'components/blog/content';
 import About from 'components/blog/about';
 import Banner from 'components/blog/banner';
 import Footer from 'components/blog/footer';
+import {getPosts} from "../api/blog";
+import Post from "../../../backend/src/models/post";
 
 /* This Layout Design was inspired from: https://frontarm.com/daishi-kato/use-ref-in-concurrent-mode/ */
 
 export default function BlogLayout() {
+    const [post, setPost] = useState<Post | undefined>(undefined);
+
     useEffect(() => {
-        // scroll to top on page load
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0); // scroll to top
+        getPosts().then((post: Post) => {
+            setPost(post);
+        }).catch((error) => {
+            // TODO: Remove console.log
+            console.log(error);
+        });
     }, []);
 
     return (
@@ -21,10 +30,10 @@ export default function BlogLayout() {
                 <Navbar/>
             </div>
             <div className="blog-header">
-                <UbuntuHeader/>
+                <Header post={post}/>
             </div>
             <div className="blog-content">
-                <UbuntuContent/>
+                <Content post={post}/>
             </div>
             <div className="blog-about">
                 <About/>
