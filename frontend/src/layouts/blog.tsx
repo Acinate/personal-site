@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 
 import Navbar from 'components/navbar/navbar';
-import Header from 'components/blog/header';
-import Content from 'components/blog/content';
+import UbuntuHeader from 'components/blog/posts/ubuntu_java_header';
+import UbuntuContent from 'components/blog/posts/ubuntu_java_content';
 import About from 'components/blog/about';
 import Banner from 'components/blog/banner';
 import Footer from 'components/blog/footer';
@@ -21,10 +21,10 @@ export default function BlogLayout() {
                 <Navbar/>
             </div>
             <div className="blog-header">
-                <Header/>
+                <UbuntuHeader/>
             </div>
             <div className="blog-content">
-                <Content/>
+                <UbuntuContent/>
             </div>
             <div className="blog-about">
                 <About/>

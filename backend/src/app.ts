@@ -1,12 +1,12 @@
 import express from "express";
 import compression from "compression";
 import bodyParser from "body-parser";
-import cors, { CorsOptions } from "cors";
+import cors, {CorsOptions} from "cors";
 
-import { PORT, API_KEY } from "./util/secrets";
-
+import {PORT} from "./util/secrets";
 // Controllers (route handlers)
 import * as homeController from "./controllers/home";
+import * as blogController from "./controllers/blog";
 
 // Create Express server
 const app = express();
@@ -38,5 +38,6 @@ app.use(cors(corsOptions));
  * Server routes.
  */
 app.get("/", homeController.index);
+app.get("/blog", blogController.posts);
 
 export default app;
