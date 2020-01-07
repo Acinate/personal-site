@@ -1,5 +1,4 @@
 import React from 'react';
-import Motd from 'components/profile/motd';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
@@ -52,12 +51,6 @@ export default class Header extends React.Component {
                         </a>
                         <a className="link" href="/#">
                             <FontAwesomeIcon icon={faEnvelope}/>
-                        </a>
-                    </div>
-                    <Motd/>
-                    <div className="contact">
-                        <a onClick={scrollToContactForm}>
-                            <button type="button">Send a Message</button>
                         </a>
                     </div>
                 </div>

@@ -4,7 +4,6 @@ import Header from 'components/profile/header';
 import Skills from 'components/profile/skills';
 import Guides from 'components/profile/guides';
 import Projects from 'components/profile/projects';
-import Contact from 'components/profile/contact';
 import Navbar from "../components/navbar/navbar";
 
 export interface ISiteLayout {
@@ -28,9 +27,6 @@ export default class Profile extends React.Component {
                 </div>
                 <div className="site-projects">
                     <Projects/>
-                </div>
-                <div className="site-contact">
-                    <Contact/>
                 </div>
             </div>
         );
