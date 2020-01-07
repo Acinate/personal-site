@@ -17,9 +17,7 @@ export default function (props: ContentProps) {
     return (
         <div className="blog_content_container">
             <div className="blog_content_inner">
-                <div className="blog_doc_wrapper">
-                    {props.post ? <div className="blog_post" dangerouslySetInnerHTML={{__html: props.post.html}}/> : ''}
-                </div>
+                {props.post ? <div className="blog_post" dangerouslySetInnerHTML={{__html: props.post.html}}/> : ''}
             </div>
         </div>
     )

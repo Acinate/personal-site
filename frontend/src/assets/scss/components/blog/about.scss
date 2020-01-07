@@ -1,16 +1,12 @@
 div.blog_about_container {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 650px;
   padding-bottom: 4rem;
-  div.blog_about_inner {
-    width: 55%;
-  }
 }
 
 div.blog_about_title {
   h2 {
-    margin: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
   }
@@ -30,7 +26,7 @@ div.blog_about_description {
     line-height: 32px;
   }
   p.bio {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0.5rem;
   }
   p.location {
