@@ -1,12 +1,12 @@
 {
-  "name": "react-typescript",
+  "name": "personal-site",
   "version": "1.0.0",
   "description": "A clean & lightweight React starter project.",
   "main": "index.tsx",
   "author": "Jason Efthimiou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acinate/react-typescript/issues"
+    "url": "https://github.com/acinate/personal-site/issues"
   },
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
