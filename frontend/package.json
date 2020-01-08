@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "prod": "webpack-dev-server --config webpack.prod.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "npm install && webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

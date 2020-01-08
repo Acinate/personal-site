@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "sudo npm run build --prefix ./frontend && sudo npm run build --prefix ./backend",
-    "compose": "sudo npm run build && sudo docker-compose build",
-    "start": "sudo docker-compose up -d"
+    "build": "npm run build --prefix ./frontend && npm run build --prefix ./backend",
+    "compose": "npm run build && docker-compose build",
+    "start": "docker-compose up -d"
   }
 }
